@@ -2,6 +2,8 @@ require("frost_folder")
 
 require("mason").setup()
 
+vim.cmd[[autocmd FileType trouble setlocal wrap]]
+
 vim.g.UltiSnipsSnippetDirectories = {'~/.config/nvim/UltiSnips'}
 
 vim.g.python3_host_prog = '/usr/bin/python3'

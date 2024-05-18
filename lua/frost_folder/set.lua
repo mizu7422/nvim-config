@@ -8,6 +8,10 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
+vim.api.nvim_exec([[
+  autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+]], false)
 
 vim.opt.swapfile = false
 vim.opt.backup = false
